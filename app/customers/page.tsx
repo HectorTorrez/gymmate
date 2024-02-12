@@ -5,6 +5,7 @@ import React from "react";
 import { Avatar, Input } from "@nextui-org/react";
 import Dropdown from "@/components/Dropdown";
 import { SearchIcon } from "lucide-react";
+import Link from "next/link";
 
 export default function page() {
   return (
@@ -22,10 +23,13 @@ export default function page() {
           {users.map((user) => {
             return (
               <li className="flex items-center justify-between  " key={user.id}>
-                <div className="flex gap-3 items-center">
+                <Link
+                  href={`/customers/${user.id}`}
+                  className="flex gap-3 items-center"
+                >
                   <Avatar src={user.avatar} />
                   <p>{user.email}</p>
-                </div>
+                </Link>
                 <div className="">
                   <Dropdown />
                 </div>
