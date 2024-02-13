@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Navbar,
@@ -56,8 +57,8 @@ export default function App() {
                 index === 2
                   ? "primary"
                   : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
+                    ? "danger"
+                    : "foreground"
               }
               className="w-full"
               href={item.route}

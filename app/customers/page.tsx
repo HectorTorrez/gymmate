@@ -10,7 +10,6 @@ import Link from "next/link";
 export default function page() {
   return (
     <>
-      <Navbar />
       <div className="flex justify-center my-10 ">
         <Input
           label="Search your client"
