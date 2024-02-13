@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { Button } from "@nextui-org/react";
 
-export default function App() {
-  const [view, setView] = useState("meal");
-
+export default function App({
+  view,
+  setView,
+}: {
+  view: string;
+  setView: React.Dispatch<React.SetStateAction<string>>;
+}) {
   return (
     <div>
       <div className="flex gap-5 justify-center mt-5">
@@ -26,7 +30,6 @@ export default function App() {
           Note
         </Button>
       </div>
-      {view === "meal" && <p>meal</p>}
     </div>
   );
 }
