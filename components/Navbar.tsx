@@ -11,6 +11,7 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
+import { UserButton } from "@clerk/nextjs";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -44,9 +45,7 @@ export default function App() {
           <Link href="#">Login</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
-          </Button>
+          <UserButton afterSignOutUrl="/" />
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
