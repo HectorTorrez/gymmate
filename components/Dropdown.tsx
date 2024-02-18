@@ -20,11 +20,11 @@ export default function App() {
         </Button>
       </DropdownTrigger>
       <DropdownMenu aria-label="Example with disabled actions">
-        <DropdownItem key="delete" className="text-danger" color="danger">
+        <DropdownItem key="delete" className="text-danger">
           <Confirm
             title="Do you want  to delete this user?"
-            close="Delete"
-            confirm="Confirm"
+            close="Close"
+            confirm="Delete"
           />
         </DropdownItem>
       </DropdownMenu>

@@ -38,10 +38,10 @@ export default function App({ body, title, close, confirm }: AppProps) {
                 <p>{body}</p>
               </ModalBody>
               <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
+                <Button color="primary" onPress={onClose}>
                   {close}
                 </Button>
-                <Button color="primary" onPress={onClose}>
+                <Button color="danger" onPress={onClose}>
                   {confirm}
                 </Button>
               </ModalFooter>

@@ -10,7 +10,7 @@ export default function page() {
   const { id } = useParams();
 
   return (
-    <>
+    <section className="max-w-[1000px] m-auto">
       <div>
         <SelectPlan view={view} setView={setView} />
       </div>
@@ -23,6 +23,6 @@ export default function page() {
           </div>
         )}
       </div>
-    </>
+    </section>
   );
 }
