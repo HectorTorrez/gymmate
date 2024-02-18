@@ -17,18 +17,6 @@ export default function App({
         >
           Routine
         </Button>
-        <Button
-          variant={view === "meal" ? "bordered" : "solid"}
-          onClick={() => setView("meal")}
-        >
-          Meal
-        </Button>
-        <Button
-          variant={view === "note" ? "bordered" : "solid"}
-          onClick={() => setView("note")}
-        >
-          Note
-        </Button>
       </div>
     </div>
   );
