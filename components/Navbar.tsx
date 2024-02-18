@@ -30,7 +30,7 @@ export default function App() {
         />
         <NavbarBrand>
           <Link href="/" className="font-bold text-inherit">
-            Gym
+            Gym Mate
           </Link>
         </NavbarBrand>
       </NavbarContent>
@@ -48,6 +48,7 @@ export default function App() {
           <UserButton afterSignOutUrl="/" />
         </NavbarItem>
       </NavbarContent>
+
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
